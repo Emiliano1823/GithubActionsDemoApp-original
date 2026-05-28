@@ -2,6 +2,13 @@ name: Compilar y desplegar
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/compilar-desplegar.yml'
+      - 'GithubActionsDemoApp/**'
+      - 'pruebas/**'
+    branches:
+      - main
 
 jobs:
   build:
