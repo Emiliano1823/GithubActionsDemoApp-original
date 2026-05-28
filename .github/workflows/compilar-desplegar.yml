@@ -29,7 +29,7 @@ jobs:
         run: dotnet build --no-restore
 
       - name: Realizar las pruebas
-        run: dotnet test --no--build
+        run: dotnet test --no-build
 
 
 
